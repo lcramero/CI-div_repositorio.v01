@@ -28,7 +28,7 @@ function filtrarDivisas(array, divisaSeleccionada) {
 }
 seleccion.addEventListener("change", () => {
   let divisaSeleccionada = document.querySelector("#selectorMoneda").value;
-  fetch("/public/data.json")
+  fetch("../public/data.json")
     .then((response) => response.json())
     .then((data) => {
       filtrarDivisas(data, divisaSeleccionada);
