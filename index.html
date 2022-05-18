@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Interactivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navDisplay">
+            <div>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-3d-cube-sphere"
+                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6495ed" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 17.6l-2 -1.1v-2.5" />
+                        <path d="M4 10v-2.5l2 -1.1" />
+                        <path d="M10 4.1l2 -1.1l2 1.1" />
+                        <path d="M18 6.4l2 1.1v2.5" />
+                        <path d="M20 14v2.5l-2 1.12" />
+                        <path d="M14 19.9l-2 1.1l-2 -1.1" />
+                        <line x1="12" y1="12" x2="14" y2="10.9" />
+                        <line x1="18" y1="8.6" x2="20" y2="7.5" />
+                        <line x1="12" y1="12" x2="12" y2="14.5" />
+                        <line x1="12" y1="18.5" x2="12" y2="21" />
+                        <path d="M12 12l-2 -1.12" />
+                        <line x1="6" y1="8.6" x2="4" y2="7.5" />
+                    </svg>
+                </a>
+            </div>
+            <div class="divContacto">
+                <a href="#footer">
+                    <button>Contacto</button>
+                </a>
+            </div>
+            <div class="divLogin">
+                <div class="divRegistro">
+                    <button id="botonRegistro">Registro</button>
+                </div>
+                <div class="divIngreso">
+                    <button id="botonIngreso">
+                        <div>
+                            <p>Ingreso</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="divHeadTop">
+            <h1 class="textCenter">CI-div</h1>
+            <h2 class="textCenter">Bienvenido al Calculador de cambio Internacional</h2>
+        </div>
+        <div class="divHeadBottom">
+            <p class="textCenter">Esta herramienta te permitirá saber el costo final y los impuestos que debes pagar en
+                función del precio del producto/servicio que quieres adquirir.</p>
+        </div>
+        <div id="row" class="row">
+            <div class="column textCenter">
+                <div>
+                    <h2>Divisa a convertir:</h2>
+                    <select class="selector" name="select" id="selectorMoneda">
+                        <option disabled selected>Seleccione una opcion</option>
+                        <option value="1">U$D (Dólares)</option>
+                        <option value="2">EUR (Euros)</option>
+                        <option value="3">GBP (Libra Esterlina)</option>
+                        <option value="4">JPY (Yen Japonés)</option>
+                        <option value="5">CNY (Yen Chino)</option>
+                        <option value="6">BRL (Reais)</option>
+                    </select>
+                    <div class="textoVisual"></div>
+                </div>
+                <div>
+                    <h2>Cantidad a convertir</h2>
+                    <input class="inputText fontSansPro textCenter" type="number" id="cantidad" value="1.00" min="0"
+                        step="0.01">
+                </div>
+                <div>
+                    <button id="conversorDeMoneda" class="button"><span>Convertir</span></button>
+                </div>
+                <div>
+                    <div class="divConversionesRealizadas">
+                        <h3 class="textCenter">Pesos Argentinos</h3>
+                        <div class="textContentStyle">
+                            <div id="pesos" class="fontSansPro"></div>
+                        </div>
+                    </div>
+                    <div class="divConversionesRealizadas">
+                        <h3 class="textCenter">IVA (21%)</h3>
+                        <div class="textContentStyle">
+                            <div id="IVA" class="fontSansPro"></div>
+                        </div>
+                    </div>
+                    <div class="divConversionesRealizadas">
+                        <h3 class="textCenter">Retención a las ganancias (35%)</h3>
+                        <div class="textContentStyle">
+                            <div id="RAG" class="fontSansPro"></div>
+                        </div>
+                    </div>
+                    <div class="divConversionesRealizadas">
+                        <h3 class="textCenter">Impuestos país (8%)</h3>
+                        <div class="textContentStyle">
+                            <div id="IP" class="fontSansPro"></div>
+                        </div>
+                    </div>
+                    <div class="divConversionesRealizadas">
+                        <h3 class="textCenter">Costo final ($)</h3>
+                        <div class="textContentStyle">
+                            <div id="total" class="fontSansPro"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divMiddleTop">
+            </div>
+            <div class="divMiddleBottom">
+                <div class="divIzquierda">
+
+                </div>
+                <div class="divDerecha">
+                    <div class="divDerechaTop">
+                        <p class="textCenter">Pagá tus facturas</p>
+                    </div>
+                    <div class="divDerechaBottom">
+                        <svg viewbox="0 0 100 20">
+                            <defs>
+                                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                                    <stop offset="5%" stop-color="#11acfc" />
+                                    <stop offset="95%" stop-color="#ef99c4" />
+                                </linearGradient>
+                                <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                                    <path id="wavePath"
+                                        d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                                        mask="url(#mask)" fill="url(#gradient)">
+                                        <animateTransform attributeName="transform" begin="0s" dur="1.5s"
+                                            type="translate" from="0,0" to="40,0" repeatCount="indefinite" />
+                                    </path>
+                                </pattern>
+                            </defs>
+                            <text text-anchor="middle" x="43" y="15" font-size="20" fill="url(#wave)"
+                                fill-opacity="1">ONLINE</text>
+                            <text text-anchor="middle" x="43" y="15" font-size="20" fill="url(#gradient)"
+                                fill-opacity="0.25">ONLINE</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="divTarjetasYTexto">
+                    <div>
+                        <h2 class="textCenter">Tus tarjetas</h2>
+                    </div>
+                    <div class="divTarjetas">
+                        <div class="divTarjetasACargar">
+                            <div class="cardDetails">
+                                <div>
+                                    <p>Nueva tarjeta débito o crédito</p>
+                                </div>
+                                <div class="cardNumber">
+                                    <label>Número de tarjeta</label>
+                                    <input id="numeroTarjeta" type="text"
+                                        title="El formato requerido debe coincidir con XXXX-XXXX-XXXX-XXXX"
+                                        placeholder="1234-1234-1234-1234" />
+                                </div>
+                                <div class="nameHolderNumber">
+                                    <label> Propietario de la Tarjeta </label>
+                                    <input id="propietarioTarjeta" type="text" title="Ingrese nombre y apellido"
+                                        placeholder="Enter your Name" />
+                                </div>
+                                <div class="divCardRow">
+                                    <div class="dateNumber">
+                                        <label>Fecha de caducidad</label>
+                                        <input id="fechaExpiroTarjeta" type="text"
+                                            title="El formato requerido debe coincidir con XX/XX y contener /"
+                                            placeholder="MM / YY" />
+                                    </div>
+                                    <div class="cvvNumber">
+                                        <label>CVV</label>
+                                        <input id="cvvTarjeta" type="text" title="Ingrese solo hasta tres (3) números"
+                                            placeholder="123" />
+                                    </div>
+                                </div>
+                                <div class="buttonSubmit">
+                                    <button id="creadorDeTarjetas" type="submit" class="button">
+                                        <span>Aceptar</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divTarjetasCargadas">
+                            <h2>Tarjetas existentes</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divBottom">
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer">
+            <div class="footerLogo">
+                <div>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-3d-cube-sphere"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6495ed" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 17.6l-2 -1.1v-2.5" />
+                            <path d="M4 10v-2.5l2 -1.1" />
+                            <path d="M10 4.1l2 -1.1l2 1.1" />
+                            <path d="M18 6.4l2 1.1v2.5" />
+                            <path d="M20 14v2.5l-2 1.12" />
+                            <path d="M14 19.9l-2 1.1l-2 -1.1" />
+                            <line x1="12" y1="12" x2="14" y2="10.9" />
+                            <line x1="18" y1="8.6" x2="20" y2="7.5" />
+                            <line x1="12" y1="12" x2="12" y2="14.5" />
+                            <line x1="12" y1="18.5" x2="12" y2="21" />
+                            <path d="M12 12l-2 -1.12" />
+                            <line x1="6" y1="8.6" x2="4" y2="7.5" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <h2>
+                            CI-div
+                        </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="footerContacto">
+                <div>
+                    <a class="footer__link--decoration" href="mailto:cvdiv@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="30"
+                            height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#165ed3" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link--decoration" href="https://wa.me/+5942658963552">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                            width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#165ed3" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a class="footer__link--decoration" href="https://www.instagram.com/lcramero/?hl=es">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#165ed3" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footerSobreNosotros">
+                <div>
+                    <h3 class="textCenter">
+                        Web dedicada a calcular <br>
+                        las relaciones entre monedas extrangeras <br>
+                        y pesos Argentinos.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/login.js"></script>
+    <script src="js/divisa.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

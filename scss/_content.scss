@@ -1,0 +1,473 @@
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    .divHeadTop {
+        padding-bottom: 3rem;
+        background-image: linear-gradient(180deg, #8EC5FC 0%, #E0C3FC 30%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+        clip-path: polygon(100% 0, 100% 65%, 0 90%, 0 0);
+        box-shadow: 2px 2px 15px cornflowerblue;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 5rem 0 5rem 0;
+            margin-top: 0;
+        }
+        h2{
+            margin-top: -6rem;
+        }
+        p {
+            padding-bottom: 2rem;
+        }
+    }
+    .navDisplay{
+        padding: 1.5rem 10rem 2rem 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.25rem;
+        .divServicios{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: transparent;
+            border-radius: 0.4rem;
+            width: 7rem;
+            height: 2.5rem;
+            button{
+                background-color: transparent;
+                border: hidden;
+                color: 			#656565;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            .divServiciosSVG{
+                margin: -0.8rem 0 0 -1.5rem;
+            }
+        }
+        .divContacto{
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border-radius: 0.4rem;
+            width: 7rem;
+            height: 2.5rem;
+            button{
+                background-color: transparent;
+                border: hidden;
+                color: 			#656565;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+        }
+        .divLogin{
+            display: flex;
+            flex-direction: row;
+            .divRegistro{
+                display: flex;
+                justify-content: center;
+                margin-left: 1.5rem;
+                background-color: transparent;
+                border-radius: 0.4rem;
+                width: 7rem;
+                height: 2.5rem;
+                button{
+                    background-color: transparent;
+                    border: hidden;
+                    color: 			#656565;
+                }
+                button:hover{
+                    cursor: pointer;
+                } 
+            }
+            .divIngreso{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 1.5rem;
+                background-color: cornflowerblue;
+                border-radius: 0.4rem;
+                width: 7rem;
+                height: 2.5rem;
+                button{
+                    background-color: transparent;
+                    border: hidden;
+                    color: 	azure;
+                }
+                button:hover{
+                    cursor: pointer;
+                }     
+            }
+        }
+    }
+
+    .divHeadBottom {
+        margin-top: -2rem;
+        padding: 5rem 0 3rem 0;
+        height: 5rem;
+        background: rgb(63, 94, 251);
+        background: linear-gradient(360deg, rgba(142, 197, 252, 1) 50%, rgba(224, 195, 252, 1) 76%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+        clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 50%);
+        box-shadow: 0.2rem 0.2rem 1.5rem cornflowerblue;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .divMiddleTop {
+            background-image: url(../img/peakpx.jpg);
+            background-repeat: no-repeat;
+            background-color: #39c;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 20rem;
+            width: 100%;
+            display: inline-block;
+            padding: 50rem 3rem 50rem 3rem;
+            margin: -50rem 0 -40rem 0;
+            clip-path: polygon(100% 15%, 100% 38%, 0 60%, 0 35%);
+            z-index: 0;
+        }
+        .divMiddleBottom{
+            display: flex;
+            flex-direction: row;
+            margin:0 0 7rem 0;
+            .divDerecha{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10rem;
+                .divDerechaTop{
+                    margin-left: 85rem;
+                    p{
+                        font-size: 4rem;
+                    }
+                }
+                .divDerechaBottom{
+                    margin-left: 80rem;
+                    /* p{
+                        margin-top: -2rem;
+                        font-size: 8rem;
+                    } */
+                    svg{font-weight:bolder;max-width:600px;height:auto;}
+                }
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .divConversionesRealizadas {
+                    background: rgba(255, 255, 255, 1);
+                    margin: 1rem;
+                    border-radius: 0.4rem;
+                    border: solid;
+                    border-color: rgba(216, 237, 239, 1);
+                    box-shadow: 0.2rem 0.2rem 1.5rem cornflowerblue;
+                    height: 5rem;
+                    z-index: 1;
+                }
+            }
+
+            .divTarjetasYTexto {
+                margin-top: -15rem;
+                .divTarjetas {
+                    margin-top: -5rem;
+                    padding: 10rem 0 5rem 0;
+                    border-radius: 0.5rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+
+                    .divTarjetasACargar {
+                        padding-bottom: 10rem;
+                        margin-right: 10rem;
+                        width: 50rem;
+                        height: 28rem;
+
+                        .cardDetails {
+                            width: 50rem;
+                            display: flex;
+                            flex-direction: column;
+                            background-color: rgba(247, 250, 252, 1);
+                            border: solid;
+                            color: rgba(216, 237, 239, 1);
+                            border-radius: 0.6rem;
+
+                            .divCardRow {
+                                display: flex;
+                                flex-direction: row;
+                                margin: 1rem;
+                            }
+
+                            .cardNumber {
+                                label {
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+
+                                input {
+                                    width: 30rem;
+                                    height: 4rem;
+                                    border-radius: 0.6rem;
+                                    background-color: rgba(255, 255, 255, 1);
+                                    border: solid rgba(216, 237, 239, 1);
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+                            }
+
+                            .nameHolderNumber {
+                                label {
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+
+                                input {
+                                    width: 30rem;
+                                    height: 4rem;
+                                    border-radius: 0.6rem;
+                                    background-color: rgba(255, 255, 255, 1);
+                                    border: solid rgba(216, 237, 239, 1);
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+                            }
+
+                            .dateNumber {
+                                margin-right: 1.5rem;
+
+                                label {
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+
+                                input {
+                                    width: 13rem;
+                                    height: 4rem;
+                                    border-radius: 0.6rem;
+                                    background-color: rgba(255, 255, 255, 1);
+                                    border: solid rgba(216, 237, 239, 1);
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+                            }
+
+                            .cvvNumber {
+                                margin-left: 1.5rem;
+                                color: rgba(0, 0, 0, 0.9);
+
+                                input {
+                                    width: 13rem;
+                                    height: 4rem;
+                                    border-radius: 0.6rem;
+                                    background-color: rgba(255, 255, 255, 1);
+                                    border: solid rgba(216, 237, 239, 1);
+                                    color: rgba(0, 0, 0, 0.9);
+                                }
+                            }
+
+                            .buttonSubmit {
+                                button {
+                                    width: 13rem;
+                                    height: 4rem;
+                                    border-radius: 0.6rem;
+                                    background-color: rgba(142, 197, 252, 1);
+                                    border: solid;
+                                    color: rgba(255, 255, 255, 1);
+                                }
+                            }
+
+                            div {
+                                p {
+                                    color: rgba(0, 0, 0, 0.9);
+                                    font-size: 1.5rem;
+                                }
+                            }
+
+                            label {
+                                font-size: 1.5rem;
+                                line-height: 3.5rem;
+                            }
+                        }
+                    }
+
+                    .divTarjetasCargadas {
+                        background-color: rgba(247, 250, 252, 1);
+                        width: 40rem;
+                        border: solid rgba(216, 237, 239, 1);
+                        border-radius: 0.6rem;
+                    }
+                }
+
+            }
+          
+            .card {
+                display: flex;
+                flex-direction: row;
+                background-color: rgba(247, 250, 252, 1);
+                border: solid rgba(216, 237, 239, 1);
+                border-radius: 0.6rem;
+                .divSVG {
+                    display: flex;
+                    flex-direction: row;
+                    align-items:flex-start;
+                    margin: 0 2rem 0 2rem;
+                }
+
+                div {
+                    .divTexto {
+                        display: flex;
+                        flex-direction: row;
+                        h5 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            font-size: 1.5rem;
+                        }
+                        div{
+                            margin:0 2rem 0 2rem;
+                        }
+                    }
+                }
+            }
+
+            div {
+                h3 {
+                    margin: 0rem 0 -0.005rem 0;
+                    font-size: 1.5rem;
+                    font-weight: lighter;
+                }
+
+                .selector {
+                    width: 17rem;
+                    text-align: center;
+                    border-radius: 0.3rem;
+                    border: 0.2rem solid #39c;
+                    font-size: 1.5rem;
+                }
+
+                .inputText {
+                    font-size: 1.8rem;
+                }
+
+                .textContentStyle {
+                    display: inline-block;
+                    width: 30rem;
+
+                    div {
+                        font-size: 2rem;
+
+                        p {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 0.4rem;
+            background-color: rgba(97, 187, 233, 1);
+            border: none;
+            color: #FFFF;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            width: 11rem;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: ' \00BB';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -2rem;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 2.5rem;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .inputText {
+            border-radius: 0.3rem;
+            border: 0.2rem solid #39c;
+            width: 10rem;
+            height: 20px;
+            font-size: 1.5rem;
+
+        }
+    }
+}
+footer{
+    background-image: linear-gradient(180deg, #8EC5FC 0%, #E0C3FC 30%);
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+            .footerLogo{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                div{
+                    margin: 1rem;
+                    a{
+                        text-decoration: none;  
+                        h2{
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+            .footerSobreNosotros{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .footerContacto{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                div{
+                    margin-right: 1rem;
+                }
+            }
+    }
+    
+}

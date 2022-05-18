@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Raleway:wght@200&family=Source+Sans+Pro:wght@200;300;400&display=swap");
+.divFlexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+
+.fontRaleway {
+  font-family: 'Raleway', sans-serif; }
+
+.fontSansPro {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif; }
+
+.textCenter {
+  text-align: center;
+  font-size: 2rem; }
+
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0; }
+  body .divHeadTop {
+    padding-bottom: 3rem;
+    background-image: linear-gradient(180deg, #8EC5FC 0%, #E0C3FC 30%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+    clip-path: polygon(100% 0, 100% 65%, 0 90%, 0 0);
+    box-shadow: 2px 2px 15px cornflowerblue; }
+    body .divHeadTop h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 5rem 0 5rem 0;
+      margin-top: 0; }
+    body .divHeadTop h2 {
+      margin-top: -6rem; }
+    body .divHeadTop p {
+      padding-bottom: 2rem; }
+  body .navDisplay {
+    padding: 1.5rem 10rem 2rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.25rem; }
+    body .navDisplay .divServicios {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: transparent;
+      border-radius: 0.4rem;
+      width: 7rem;
+      height: 2.5rem; }
+      body .navDisplay .divServicios button {
+        background-color: transparent;
+        border: hidden;
+        color: #656565; }
+      body .navDisplay .divServicios button:hover {
+        cursor: pointer; }
+      body .navDisplay .divServicios .divServiciosSVG {
+        margin: -0.8rem 0 0 -1.5rem; }
+    body .navDisplay .divContacto {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border-radius: 0.4rem;
+      width: 7rem;
+      height: 2.5rem; }
+      body .navDisplay .divContacto button {
+        background-color: transparent;
+        border: hidden;
+        color: #656565; }
+      body .navDisplay .divContacto button:hover {
+        cursor: pointer; }
+    body .navDisplay .divLogin {
+      display: flex;
+      flex-direction: row; }
+      body .navDisplay .divLogin .divRegistro {
+        display: flex;
+        justify-content: center;
+        margin-left: 1.5rem;
+        background-color: transparent;
+        border-radius: 0.4rem;
+        width: 7rem;
+        height: 2.5rem; }
+        body .navDisplay .divLogin .divRegistro button {
+          background-color: transparent;
+          border: hidden;
+          color: #656565; }
+        body .navDisplay .divLogin .divRegistro button:hover {
+          cursor: pointer; }
+      body .navDisplay .divLogin .divIngreso {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+        background-color: cornflowerblue;
+        border-radius: 0.4rem;
+        width: 7rem;
+        height: 2.5rem; }
+        body .navDisplay .divLogin .divIngreso button {
+          background-color: transparent;
+          border: hidden;
+          color: azure; }
+        body .navDisplay .divLogin .divIngreso button:hover {
+          cursor: pointer; }
+  body .divHeadBottom {
+    margin-top: -2rem;
+    padding: 5rem 0 3rem 0;
+    height: 5rem;
+    background: #3f5efb;
+    background: linear-gradient(360deg, #8ec5fc 50%, #e0c3fc 76%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+    clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 50%);
+    box-shadow: 0.2rem 0.2rem 1.5rem cornflowerblue; }
+  body .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .row .divMiddleTop {
+      background-image: url(../img/peakpx.jpg);
+      background-repeat: no-repeat;
+      background-color: #39c;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 20rem;
+      width: 100%;
+      display: inline-block;
+      padding: 50rem 3rem 50rem 3rem;
+      margin: -50rem 0 -40rem 0;
+      clip-path: polygon(100% 15%, 100% 38%, 0 60%, 0 35%);
+      z-index: 0; }
+    body .row .divMiddleBottom {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 7rem 0; }
+      body .row .divMiddleBottom .divDerecha {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10rem; }
+        body .row .divMiddleBottom .divDerecha .divDerechaTop {
+          margin-left: 85rem; }
+          body .row .divMiddleBottom .divDerecha .divDerechaTop p {
+            font-size: 4rem; }
+        body .row .divMiddleBottom .divDerecha .divDerechaBottom {
+          margin-left: 80rem;
+          /* p{
+                        margin-top: -2rem;
+                        font-size: 8rem;
+                    } */ }
+          body .row .divMiddleBottom .divDerecha .divDerechaBottom svg {
+            font-weight: bolder;
+            max-width: 600px;
+            height: auto; }
+    body .row .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body .row .column div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .row .column div .divConversionesRealizadas {
+          background: white;
+          margin: 1rem;
+          border-radius: 0.4rem;
+          border: solid;
+          border-color: #d8edef;
+          box-shadow: 0.2rem 0.2rem 1.5rem cornflowerblue;
+          height: 5rem;
+          z-index: 1; }
+      body .row .column .divTarjetasYTexto {
+        margin-top: -15rem; }
+        body .row .column .divTarjetasYTexto .divTarjetas {
+          margin-top: -5rem;
+          padding: 10rem 0 5rem 0;
+          border-radius: 0.5rem;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start; }
+          body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar {
+            padding-bottom: 10rem;
+            margin-right: 10rem;
+            width: 50rem;
+            height: 28rem; }
+            body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails {
+              width: 50rem;
+              display: flex;
+              flex-direction: column;
+              background-color: #f7fafc;
+              border: solid;
+              color: #d8edef;
+              border-radius: 0.6rem; }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .divCardRow {
+                display: flex;
+                flex-direction: row;
+                margin: 1rem; }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .cardNumber label {
+                color: rgba(0, 0, 0, 0.9); }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .cardNumber input {
+                width: 30rem;
+                height: 4rem;
+                border-radius: 0.6rem;
+                background-color: white;
+                border: solid #d8edef;
+                color: rgba(0, 0, 0, 0.9); }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .nameHolderNumber label {
+                color: rgba(0, 0, 0, 0.9); }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .nameHolderNumber input {
+                width: 30rem;
+                height: 4rem;
+                border-radius: 0.6rem;
+                background-color: white;
+                border: solid #d8edef;
+                color: rgba(0, 0, 0, 0.9); }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .dateNumber {
+                margin-right: 1.5rem; }
+                body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .dateNumber label {
+                  color: rgba(0, 0, 0, 0.9); }
+                body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .dateNumber input {
+                  width: 13rem;
+                  height: 4rem;
+                  border-radius: 0.6rem;
+                  background-color: white;
+                  border: solid #d8edef;
+                  color: rgba(0, 0, 0, 0.9); }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .cvvNumber {
+                margin-left: 1.5rem;
+                color: rgba(0, 0, 0, 0.9); }
+                body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .cvvNumber input {
+                  width: 13rem;
+                  height: 4rem;
+                  border-radius: 0.6rem;
+                  background-color: white;
+                  border: solid #d8edef;
+                  color: rgba(0, 0, 0, 0.9); }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails .buttonSubmit button {
+                width: 13rem;
+                height: 4rem;
+                border-radius: 0.6rem;
+                background-color: #8ec5fc;
+                border: solid;
+                color: white; }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails div p {
+                color: rgba(0, 0, 0, 0.9);
+                font-size: 1.5rem; }
+              body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasACargar .cardDetails label {
+                font-size: 1.5rem;
+                line-height: 3.5rem; }
+          body .row .column .divTarjetasYTexto .divTarjetas .divTarjetasCargadas {
+            background-color: #f7fafc;
+            width: 40rem;
+            border: solid #d8edef;
+            border-radius: 0.6rem; }
+      body .row .column .card {
+        display: flex;
+        flex-direction: row;
+        background-color: #f7fafc;
+        border: solid #d8edef;
+        border-radius: 0.6rem; }
+        body .row .column .card .divSVG {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin: 0 2rem 0 2rem; }
+        body .row .column .card div .divTexto {
+          display: flex;
+          flex-direction: row; }
+          body .row .column .card div .divTexto h5 {
+            font-size: 1.5rem; }
+          body .row .column .card div .divTexto p {
+            font-size: 1.5rem; }
+          body .row .column .card div .divTexto div {
+            margin: 0 2rem 0 2rem; }
+      body .row .column div h3 {
+        margin: 0rem 0 -0.005rem 0;
+        font-size: 1.5rem;
+        font-weight: lighter; }
+      body .row .column div .selector {
+        width: 17rem;
+        text-align: center;
+        border-radius: 0.3rem;
+        border: 0.2rem solid #39c;
+        font-size: 1.5rem; }
+      body .row .column div .inputText {
+        font-size: 1.8rem; }
+      body .row .column div .textContentStyle {
+        display: inline-block;
+        width: 30rem; }
+        body .row .column div .textContentStyle div {
+          font-size: 2rem; }
+          body .row .column div .textContentStyle div p {
+            font-weight: 400; }
+    body .row .button {
+      display: inline-block;
+      border-radius: 0.4rem;
+      background-color: #61bbe9;
+      border: none;
+      color: #FFFF;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      width: 11rem;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 0.5rem; }
+    body .row .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s; }
+    body .row .button span:after {
+      content: ' \00BB';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -2rem;
+      transition: 0.5s; }
+    body .row .button:hover span {
+      padding-right: 2.5rem; }
+    body .row .button:hover span:after {
+      opacity: 1;
+      right: 0; }
+    body .row .inputText {
+      border-radius: 0.3rem;
+      border: 0.2rem solid #39c;
+      width: 10rem;
+      height: 20px;
+      font-size: 1.5rem; }
+
+footer {
+  background-image: linear-gradient(180deg, #8EC5FC 0%, #E0C3FC 30%); }
+  footer .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    footer .footer .footerLogo {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      footer .footer .footerLogo div {
+        margin: 1rem; }
+        footer .footer .footerLogo div a {
+          text-decoration: none; }
+          footer .footer .footerLogo div a h2 {
+            font-size: 5rem; }
+    footer .footer .footerSobreNosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    footer .footer .footerContacto {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      footer .footer .footerContacto div {
+        margin-right: 1rem; }
