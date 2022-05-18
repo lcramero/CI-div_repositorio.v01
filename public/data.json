@@ -2,32 +2,38 @@
     {   "id" : 1,
         "name" : "Dolar",
         "simbol" : "U$D",
-        "value" : 190.53
+        "value" : 190.53,
+        "owner":null
     },
     {   "id" : 2,
         "name" : "Euro",
         "simbol" : "Є",
-        "value" : 224.00
+        "value" : 224.00,
+        "owner":null
     },
     {   "id" : 3,
         "name" : "Libra esterlina",
         "simbol" : "£", 
-        "value" : 142.67
+        "value" : 142.67,
+        "owner":null
     },
     {   "id" : 4,
         "name" : "Yen",
         "simbol" : "¥",
-        "value" : 0.93
+        "value" : 0.93,
+        "owner":null
     },
     {   "id" : 5,
         "name" : "Renminbi",
         "simbol" : "¥",
-        "value" : 17.16
+        "value" : 17.16,
+        "owner":null
     },
     {   "id" : 6,
         "name" : "Reais",
         "simbol" : "R$",
-        "value" : 21.53
+        "value" : 21.53,
+        "owner":null
     }
 ]
 
